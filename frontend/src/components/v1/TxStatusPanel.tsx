@@ -24,7 +24,7 @@ export interface TxStatusPanelProps {
  * TxStatusPanel Component
  * 
  * Renders a visual timeline and metadata for a transaction's lifecycle.
- * Consume state from `useTxStatus` hook to drive this component.
+ * Consume transaction state and metadata provided by application services.
  */
 export const TxStatusPanel: React.FC<TxStatusPanelProps> = ({
     phase,
