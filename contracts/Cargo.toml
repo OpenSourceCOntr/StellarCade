@@ -1,0 +1,38 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "access-control",
+    "ai-generated-game",
+    "balance-management",
+    "coin-flip",
+    "contract-health-registry",
+    "contract-interaction-library",
+    "contract-upgrade-timelock",
+    "cross-chain-bridge",
+    "daily-reward-emission",
+    "emergency-pause",
+    "escrow-vault",
+    "exploit-prevention",
+    "governance-token",
+    "matchmaking-queue",
+    "penalty-slashing",
+    "prize-pool",
+    "random-generator",
+    "revenue-split",
+    "reward-vesting",
+    "session-nonce-manager",
+    "trivia-game",
+]
+
+exclude = [
+    "higher-lower",
+]
+
+[profile.release]
+opt-level = "z"
+overflow-checks = true
+debug = false
+panic = "abort"
+lto = true
+codegen-units = 1
